@@ -5,11 +5,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class InputController {
 
-    @GetMapping("/input/")
+    @GetMapping("/input")
     public String getInput() {
         // input.htmlに画面遷移
         return "input";
