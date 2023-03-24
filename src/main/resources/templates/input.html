@@ -10,7 +10,7 @@
     <p th:text="#{content.value}"> </p>
     <form method="post" action="/output">
 
-        <p th:if="${param.previous}" th:text="'前回入力された値は「'+ ${param.previous} +'」でした。'"></p>
+        <p th:if="${param.previous}" th:text="#{content.previous}+ ${param.previous} +#{content.deshita}"></p>
 
         <input type="text" name="val">
 
